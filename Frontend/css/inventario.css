@@ -1,0 +1,32 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+}
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+button {
+    transition: all 0.3s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la barra de navegación */
+.custom-navbar {
+    background-color: #007bff;
+    padding: 15px 0;
+    text-align: center;
+}
+.custom-navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
