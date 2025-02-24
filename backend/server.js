@@ -37,6 +37,10 @@ app.get('/Cliente', (req, res) => {
     res.sendFile(path.join(__dirname,'..', 'frontend', 'Login_Cliente.html'));
 });
 
+app.get('/Admin', (req, res) => {
+    res.sendFile(path.join(__dirname,'..', 'frontend', 'admin.html'));
+});
+
 
 routes(app);
 

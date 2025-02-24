@@ -21,12 +21,25 @@ button:hover {
 /* Estilos para la barra de navegación */
 .custom-navbar {
     background-color: #007bff;
-    padding: 15px 0;
+    padding: 15px 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .custom-navbar-brand {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;
+    margin: auto;
 }
+.navbar-admin {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto;
+}
+.navbar-admin:hover {
+    text-decoration: underline;
+}
+
