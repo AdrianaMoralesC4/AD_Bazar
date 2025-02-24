@@ -10,6 +10,8 @@
 
 /* Imagen de fondo corregida */
 body {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
     background: url('../img/login-BG.webp') no-repeat center center fixed;
     background-size: cover;
     display: flex;
@@ -243,3 +245,17 @@ body {
 .carrousel .punto:nth-child(2).activo {
     background-color: #555; /* Color azul claro cuando el segundo punto está activo */
 }
+
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado interno */
+    position: fixed; /* Fija la barra en la parte inferior */
+    left: 0;
+    bottom: 0; /* La coloca en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para un efecto elevado */
+    margin: 0; /* Elimina los márgenes predeterminados */
+}
+
