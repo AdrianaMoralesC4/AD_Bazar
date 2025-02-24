@@ -55,7 +55,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     })
     .then(data => {
         alert('Inicio de sesión exitoso.');
-        window.location.href = "preguntas.html"; 
+        window.location.href = "gestion.html"; 
     })
     .catch(error => {
         console.error('Error:', error);
