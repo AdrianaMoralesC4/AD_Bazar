@@ -41,8 +41,22 @@
             <ul id="cart-items"></ul>
             <p>Total: $<span id="cart-total">0.00</span></p>
             <button onclick="checkout()">Pagar</button>
+            <button onclick="abrirDevoluciones()" class="btn-devoluciones">Devoluciones</button>
         </div>
     </main>
+    <div id="devoluciones-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarDevoluciones()">&times;</span>
+            <h2>Solicitar Devolución</h2>
+            <label for="producto-dev">Producto:</label>
+            <input type="text" id="producto-dev" placeholder="Nombre del producto">
+    
+            <label for="motivo-dev">Motivo:</label>
+            <textarea id="motivo-dev" placeholder="Describe el motivo"></textarea>
+    
+            <button onclick="enviarDevolucion()">Enviar Solicitud</button>
+        </div>
+    </div>
     <script src="js/producto.js"></script>
 </body>
 </html>

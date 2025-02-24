@@ -57,3 +57,23 @@ function filterProducts() {
         }
     }
 }
+
+function abrirDevoluciones() {
+    document.getElementById("devoluciones-modal").style.display = "block";
+}
+
+function cerrarDevoluciones() {
+    document.getElementById("devoluciones-modal").style.display = "none";
+}
+
+function enviarDevolucion() {
+    let producto = document.getElementById("producto-dev").value;
+    let motivo = document.getElementById("motivo-dev").value;
+
+    if (producto && motivo) {
+        alert("Solicitud enviada para el producto: " + producto);
+        cerrarDevoluciones();
+    } else {
+        alert("Por favor, completa todos los campos.");
+    }
+}
