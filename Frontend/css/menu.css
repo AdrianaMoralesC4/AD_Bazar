@@ -172,3 +172,74 @@ body {
     background-color: #555;
     border-radius: 5px;
 } 
+.carrousel {
+    position: fixed;
+    top: 95px;
+    width: 80%;
+    max-width: 120em;
+    padding: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+}
+
+.carrousel .grande {
+    width: 100%; /* 2 imágenes = 200% */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start; /* Cambiado a flex-start */
+    align-items: center;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .img {
+    width: 51%; /* Cada imagen ocupa el 50% del contenedor */
+    min-height: 20vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    margin-right:14%;
+    margin-left: 26%;
+    
+}
+
+.carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #21883700;
+}
+
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los puntos */
+    background-color: rgba(195, 168, 168, 0.778);
+}
+
+
+.carrousel .punto.activo {
+    background-color: #555;
+}
+.carrousel .punto:nth-child(2) {
+    background-color: rgba(195, 168, 168, 0.778); /* Color negro para el segundo punto */
+}
+.carrousel .punto:nth-child(2).activo {
+    background-color: #555; /* Color azul claro cuando el segundo punto está activo */
+}
