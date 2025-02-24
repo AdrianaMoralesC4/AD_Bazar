@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/producto.css">
+</head>
+<body>
+    <header>
+        <h1>​Bazar – Papelería “El Surtido”</h1>
+    </header>
+    <main background="img/login-BG.webp">
+        <input type="text" id="search-box" placeholder="Buscar productos..." oninput="filterProducts()">
+        <div class="product-grid" id="product-grid">
+            <div class="product-card">
+                <h2>100 Hojas A4</h2>
+                <p>$3.5</p>
+                <button onclick="addToCart('100 Hojas A4', 3.5)">AGREGAR AL CARRITO</button>
+            </div>
+            <div class="product-card">
+                <h2>Cuaderno de 4 lineas 100 Hojas</h2>
+                <p>$1,00</p>
+                <button onclick="addToCart('Cuaderno de 4 lineas 100 hojas', 1)">AGREGAR AL CARRITO</button>
+            </div>
+            <div class="product-card">
+                <h2>Kit de esferos</h2>
+                <p>$1,10</p>
+                <button onclick="addToCart('Kit de esferos', 1.10)">AGREGAR AL CARRITO</button>
+            </div>
+            <div class="product-card">
+                <h2>Notas Adhesivas 19x11cm</h2>
+                <p>$0,95</p>
+                <button onclick="addToCart('Notas Adhesivas', 0.95)">AGREGAR AL CARRITO</button>
+            </div>
+            
+            <!-- Agrega más productos aquí -->
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Pagar</button>
+        </div>
+    </main>
+    <script src="js/producto.js"></script>
+</body>
+</html>

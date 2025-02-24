@@ -1,0 +1,245 @@
+/* Fuente Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Imagen de fondo corregida */
+body {
+    background: url('../img/login-BG.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Barra superior con color azul sólido */
+.barra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: #b2d3e1; /* Color azul sólido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    animation: cambiarColorTexto 10s ease-in-out infinite; /* Animación para el color del texto */
+}
+
+/* Animación de cambio de color de texto */
+@keyframes cambiarColorTexto {
+    15% { color: #e7cebf; } /* Naranja */
+    35% { color: #d65353; } /* Verde */
+    65% { color: #f7c45f; } /* Rojo */
+    93% { color: #28364a; } /* Amarillo */
+}
+
+
+
+/* Contenedor del formulario */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 380px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Estilos de los formularios */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #41a649;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Ocultar el formulario de registro por defecto */
+.hidden {
+    display: none;
+}
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    position: fixed;
+    top: 45px;
+    background-color: #333;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+/* Lista del menú */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Elementos del menú */
+.menu li {
+    margin-right: 15px;
+}
+
+/* Enlaces del menú */
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+} 
+.carrousel {
+    position: fixed;
+    top: 95px;
+    width: 80%;
+    max-width: 120em;
+    padding: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+}
+
+.carrousel .grande {
+    width: 100%; /* 2 imágenes = 200% */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start; /* Cambiado a flex-start */
+    align-items: center;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .img {
+    width: 51%; /* Cada imagen ocupa el 50% del contenedor */
+    min-height: 20vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    margin-right:14%;
+    margin-left: 26%;
+    
+}
+
+.carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #21883700;
+}
+
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los puntos */
+    background-color: rgba(195, 168, 168, 0.778);
+}
+
+
+.carrousel .punto.activo {
+    background-color: #555;
+}
+.carrousel .punto:nth-child(2) {
+    background-color: rgba(195, 168, 168, 0.778); /* Color negro para el segundo punto */
+}
+.carrousel .punto:nth-child(2).activo {
+    background-color: #555; /* Color azul claro cuando el segundo punto está activo */
+}
